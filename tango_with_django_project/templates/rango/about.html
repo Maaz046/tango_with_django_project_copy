@@ -1,9 +1,17 @@
 <!DOCTYPE html>
+{% extends 'rango/base.html' %}
 {% load staticfiles %}
 
-<html>
+{% block  title_block %}
+    about
+{% endblock  %}
+
+{% block body_block %}
+<div>
 <p>This tutorial has been put together by Maaz Bin Tariq</p>
+</div>
 
+<div>
 <img src="{{MEDIA_URL}}cat.jpg" alt="Cat image">
-
-</html>
+</div>
+{% endblock  %}
